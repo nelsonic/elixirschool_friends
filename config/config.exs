@@ -2,14 +2,14 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config :friends, Example.Repo,
+config :friends, Friends.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "friends_repo",
   username: "postgres",
   password: "postgres",
   hostname: "localhost"
 
-config :friends, ecto_repos: [Example.Repo]
+config :friends, ecto_repos: [Friends.Repo]
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
